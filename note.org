@@ -1,0 +1,92 @@
+#+title: test title
+#+date: \today
+#+author: koowgnojeel
+#+email: koowgnojeel@koowgnojeel-Lenovo-V15-G2-ALC
+#+language: en
+
+#+latex_header: \usepackage{kotex}
+#+latex_header_extra: \usepackage[a4paper,left=1cm,right=1cm,top=0cm,bottom=2cm]{geometry}
+#+LATEX_HEADER_EXTRA: \usepackage{mdframed}
+#+LATEX_HEADER_EXTRA: \usepackage{amsmath}  % for the equation* environment
+#+LATEX_HEADER_EXTRA: \BeforeBeginEnvironment{minted}{\begin{mdframed}}
+#+LATEX_HEADER_EXTRA: \AfterEndEnvironment{minted}{\end{mdframed}}
+
+#+BEGIN_COMMENT --------------------------------------------------
+To left-align content after the table of contents (TOC) 
+#+END_COMMENT
+#+LATEX_HEADER: \setlength{\parindent}{0pt}
+#+LATEX_HEADER: \setlength{\parskip}{1em}
+
+#+BEGIN_COMMENT --------------------------------------------------
+#+OPTIONS: author:nil date:nil
+#+OPTIONS: toc:nil
+#+END_COMMENT
+
+\everymath{\displaystyle}
+
+
+
+LaTeX
+
+    \begin{verbatim}
+        ${ \displaystyle 6 \pm 1 }$
+        see - matlab.org
+    \end{verbatim}
+
+Math
+
+    Factorial
+        0! = 1
+
+    Numbers
+        * Natural numbers (without 0)
+        * Whole numbers (with 0)
+        * Integers
+        * Rational numbers
+          Any number which can be expressed as
+          a ratio of two integers. ex) p/q
+        * Factors
+          나누어 떨어지는 수. ex) n/f, w/ no remainder
+        * Composition numbers
+          which has ohter factors besides itself.
+        * Prime numbers
+          which has no factors besides itself.
+        * Absolute value
+
+    the product of 'n' consecutive natural numbers is
+    always divisible by n!
+
+    ?
+        square of any natural number
+        can be written in the form of
+        3n or 3n+1.
+        Also, square of any natural number
+        can be written in the form of
+        4n or 4n+1.
+
+        Any prime number greater than 3
+        can be written as ${ \displaystyle 6k \pm 1 }$.
+
+Emacs
+
+    CUA (Common User Access)
+
+    M_x list-buffers
+    CRM
+        C : Current
+        R : Read-only
+        M : Modified
+
+    * Swap buffers in 2 windows
+    (Not working well)
+    Window manger > Window
+        M_x window-swap-states
+
+Law of indices
+
+    * a^m x a^n = a^{m+n}
+    * a^m \div a^n = a{m-n}
+    * (a^m)^n = a^{mn} 
+    * a^{(  )}
+      
+\frac{t}{2}
