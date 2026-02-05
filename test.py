@@ -304,13 +304,14 @@ def load_data():
 
     return df
 
+
 pd_setup()
 df = load_data()
 
 # print(df.head())
 # print(df.dtypes)
 
-def scaling_transform_vectorization():
+def scaler_transformer_vectorizer_encoder():
     # Scaling vs. Transformation
     # Scaling keeps the original distribution shape
     # but changes the scale.
@@ -318,6 +319,11 @@ def scaling_transform_vectorization():
     # Vectorization is typically a precursor (선구자),
     # turning raw features into numerical data,
     # which are then scaled or transformed.
+
+    r'''
+        transformer for X = mTfidfVectorizer_X.transform(mIndependentVar)
+        encoder     for y = mLabelEncoder_y.transform(mDependentVar)
+    '''
 
     # Label encoding
     mLabelEncoder_X      = preprocessing.LabelEncoder()
