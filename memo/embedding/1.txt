@@ -1,15 +1,17 @@
 list embedding models
-list embedding models for free
+    for free
 
-list scikit-learn embedding models
-list pytorch embedding models
-list hugging face embedding models
+    for scikit-learn
+        ?
+    for pytorch
+    for hugging face
 
-embedding models and performance
-embedding model usage for similarity search
+    check performance
 
-postgres pg vector embedding model usage
-postgres pg vector basic usage
+postgres
+    pg vector
+        basic usage
+        embedding model usage
 
 Embeddings, Similarity Search and Qdrant
 https://m.youtube.com/watch?v=3UsluX0jryM
