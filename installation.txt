@@ -1,0 +1,15 @@
+using binary
+
+    Visual Studio Code on Linux
+    https://code.visualstudio.com/docs/setup/linux
+
+    Download Visual Studio Code - Mac, Linux, Windows
+    https://code.visualstudio.com/download
+
+
+using snap
+
+    $ sudo snap install --classic code
+    $ sudo snap remove  --purge code
+
+
