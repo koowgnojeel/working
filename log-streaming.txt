@@ -1,0 +1,67 @@
+$ ./2.microphone-streaming.sh 
+
+    DarkIce 1.3 live audio streamer, http://code.google.com/p/darkice/
+    Copyright (c) 2000-2007, Tyrell Hungary, http://tyrell.hu/
+    Copyright (c) 2008-2013, Akos Maroy and Rafael Diniz
+    This is free software, and you are welcome to redistribute it 
+    under the terms of The GNU General Public License version 3 or
+    any later version.
+
+    Using config file: /etc/darkice.cfg
+    Using ALSA DSP input device: plughw:1,0
+    Could not set POSIX real-time scheduling, this may cause recording skips.
+    Try to run darkice as the super-user.
+    DarkIce: DarkIce.cpp:1273: can't open connector [0]
+
+
+This message appears when
+DarkIce lacks the necessary system permissions
+to request high-priority CPU scheduling from the Linux kernel. 
+
+Common Solutions
+
+* Ignore the Warning
+  In many cases, especially on modern hardware like a Raspberry Pi,
+  this warning can be safely ignored
+  as it rarely impacts stream quality.
+
+* Run with Sudo
+  Execute the command using sudo darkice
+  to grant the program the super-user privileges
+  required for POSIX real-time scheduling.
+
+* Disable Real-time in Config
+  Open your DarkIce configuration file (usually /etc/darkice.cfg)
+  and set realtime = no under the [general] section
+  to prevent the program from attempting high-priority scheduling.
+
+* Adjust System Limits
+  For a more permanent fix without using sudo,
+  you can modify your system's security limits.
+  Add the following lines to the Linux limits configuration at
+  /etc/security/limits.conf
+
+  * USERNAME soft rtprio 99
+  * USERNAME hard rtprio 99 
+
+When to Worry
+
+If you notice actual audio skipping or stuttering in your live stream,
+it indicates your CPU is struggling to keep up.
+If the audio sounds clear, the warning is merely informational.
+
+---
+
+/etc/darkice.cfg
+    [general]
+    realtime = no
+
+This is free software, and you are welcome to redistribute it 
+under the terms of The GNU General Public License version 3 or
+any later version.
+
+Using config file: /etc/darkice.cfg
+Using ALSA DSP input device: plughw:1,0
+DarkIce: DarkIce.cpp:1273: can't open connector [0]
+
+
