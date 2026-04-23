@@ -1,3 +1,3 @@
 #!/bin/bash
 
-bluetoothctl connect 54:46:6E:7A:CB:1F # TS-BTK25-D
+MAC=$(bluetoothctl devices | grep "TS-BTK25-D" | awk '{print $2}') && bluetoothctl connect $MAC
