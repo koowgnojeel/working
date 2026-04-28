@@ -1,0 +1,45 @@
+The best native alternative to xmodmap for the Linux console (TTY) is `loadkeys`.
+It allows you to remap keyboard keys by loading a custom keymap file,
+commonly using the `dumpkeys` command
+to view current maps and sudo `loadkeys <file>` to apply changes.
+For persistent configuration, you can use `localectl set-keymap`. 
+
+* Primary Alternatives for TTY Console
+
+    * loadkeys
+      The standard, built-in tool for mapping keys in the TTY. It directly modifies how the kernel interprets scancodes.
+
+    * dumpkeys
+      Used in conjunction with loadkeys to display the current keymap, which can then be edited.
+
+    * localectl
+      A modern systemd tool to change the console layout persistently. 
+
+* How to Remap in Console (Steps)
+
+    * Identify keycodes
+      Use showkey -s to find the scancode of a key in the console.
+
+    * Dump current map
+      Run dumpkeys > my_keymap.map to create a working file.
+
+    * Edit the file
+      Open my_keymap.map and modify the keycode definitions 
+      (e.g., keycode 58 = Control to change Caps Lock to Ctrl).
+
+    * Load the new map
+      Run sudo loadkeys my_keymap.map. 
+
+* Other Tools
+
+    * Interception Tools
+      A more advanced, modular alternative for low-level input control that works on the console level.
+
+    * Xremap
+      A fast Rust-based, cross-platform tool (X11/Wayland/Console). 
+
+Note: xmodmap is designed specifically for the X Window System and will not work in a raw text console (TTY).
+
+Remap keyboard on the Linux console - Unix & Linux Stack Exchange 
+
+

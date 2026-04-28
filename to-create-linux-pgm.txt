@@ -1,0 +1,40 @@
+Creating a Linux desktop application involves 
+choosing a development framework,
+writing the code, and packaging the software for distribution across various distributions. 
+
+* GTK (GIMP Toolkit)
+* Qt
+
+* Web Technologies
+
+    * Electron
+      Allows you to use JavaScript, HTML, and CSS to build desktop apps.
+
+    * Tauri
+      A more lightweight
+      alternative to Electron
+      that uses Rust for the backend and web tech for the frontend.
+
+* Modern Cross-Platform Frameworks
+
+    * Flutter
+      Uses the Dart language and provides a highly custom UI.
+
+    * Uno Platform / Avalonia
+      Popular choices for .NET/C# developers. 
+
+* Packaging and Distribution
+
+    * Flatpak
+      The industry standard for cross-distribution apps,
+      often hosted on Flathub.
+
+    * AppImage
+      A single executable file
+      that contains all dependencies and runs on any distribution.
+
+    * Snap
+      A containerized format developed by Canonical,
+      primarily used on Ubuntu. 
+
+
