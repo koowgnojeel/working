@@ -1,2 +1,0 @@
-os.makedirs('/dev/shm/test/', exist_ok=True)
-
