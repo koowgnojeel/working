@@ -1,26 +1,3 @@
-setup test env
-    /home/koowgnojeel/workspace/python/flask/gunicorn-hello-world.tgz
-        logs/
-    /home/koowgnojeel/workspace/python/flask/serve-index-only.py
-        static/
-        templates/
-        upload/
-    /home/koowgnojeel/workspace/python/flask/website-datatables/
-        setup/
-        static/
-        templates/
-        upload/
-
-* Airflow
-
-    Airflow
-    http://jong-e.mywire.org:5050/tabular_qna/textbook/read/apache-airflow-948e52e5349f11ed979cf08ff8320eae
-    http://localhost:8000/tabular_qna/textbook/read/apache-airflow-948e52e5349f11ed979cf08ff8320eae
-
-    Workflow management tools
-    http://jong-e.mywire.org:5050/tabular_qna/textbook/read/workflow-management-tools
-    http://localhost:8000/tabular_qna/textbook/read/workflow-management-tools
-
 * Authentication
     OpenID
         OAuth vs OpenID

@@ -1,0 +1,16 @@
+simple flask sample
+    ~/workspace/python/flask/serve-index-only.py
+        static/
+        templates/
+        upload/
+
+    ~/workspace/python/flask/gunicorn-hello-world.tgz
+        logs/
+
+datatables
+~/workspace/python/flask/website-datatables/
+    setup/
+    static/
+    templates/
+    upload/
+
